@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-88935594-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+  <!-- Google Analytics -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <meta name="author" content="Hagar Shilo">
+  <link rel="stylesheet" type="text/css" href="mobile.css">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src='spectrum.js'></script>
+  <link rel='stylesheet' href='spectrum.css'/>
+  <script src="main.js"></script>
+  <script src="FileSaver.js"></script>
+  <script src="canvas-to-blob.min.js"></script>
+  <script src="https://use.fontawesome.com/8f61b97be3.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script async src="https://static.addtoany.com/menu/page.js"></script>
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+</head>
+<body>
+  <!-- FB -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <div id="wrapper">
+      <div class="main">
+          <canvas id="myMandala">
+            <p>Your browser doesn't support canvas.</p>
+          </canvas>
+      </div>
+
+      <div id="menu">
+        <div class="buttons">
+          <a id="btn-color" class="color-picker"><button type="button" class="btn btn-default">Color: <span class="color-picker"><input type='text' id="selectionPalette" /></span></button></a>
+          <a id="set-line-width"><button type="button" class="btn -default">Size: <input type="number" min="1" id="line-width" value="1" onclick="this.select()"></button></a>
+          <a id="btn-num-rot"><button type="button" class="btn btn-default">Lines: <input type="number" id="rotations-num" min="0" value="6" onclick="this.select()"></button></a>
+          <a id="btn-flip-switch"><button type="button" class="btn btn-default">Double: <input type="checkbox" id="do-reflect" checked="true"></button></a>
+          <a id="btn-download"><button type="button" class="btn btn-default">Save <i class="fa fa-save" aria-hidden="true"></i></button></a>
+          <a id="btn-clear"><button type="button" class="btn btn-danger">Clear <i class="fa fa-trash" aria-hidden="true"></i></button></a>
+        </div>
+        <div class="social">
+          <div class="fb-share-button" data-href="http://mandala.hagarsh.com" data-layout="button" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fmandala.hagarsh.com%2F&amp;src=sdkpreparse">Share</a></div>
+          <div class="fb-like" data-href="https://www.facebook.com/Mandala-1247769641955808/" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
+        </div>
+      </div>
+
+  </div> <!-- /Wrapper -->
+  <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script><!-- Tether for Bootstrap -->
+  <script src="bootstrap.min.js"></script>
+</body>
+</html>

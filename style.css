@@ -1,0 +1,506 @@
+#desktop, #mobile {
+  display: none;
+}
+
+body {
+  margin: 0;
+  font-family: 'Varela Round', sans-serif;
+}
+
+body, #main, html, .mobile-menu {
+  background-color: #d3d3d3; /* light gray */
+}
+
+h1 {
+  color: #888;
+  margin-left: 4px;
+  font-size: 115%;
+}
+
+h4 {
+  margin-top: 0;
+}
+
+h5 {
+  margin-left: 32px;
+  margin-top: -10px
+}
+
+content, header {
+  display: flex;
+}
+
+header {
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  margin-left: 0.5em;
+}
+
+button {
+  outline: none;
+}
+
+.logo > img {
+  border-radius: 50%;
+}
+
+.btn {
+  border: 0;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14pt;
+  width: 97%;
+}
+
+.mobile-btn-row {
+  padding: 0 0.75rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile-btn-row.row-center {
+  justify-content: space-around;
+}
+
+.mobile-btn-row.row1 > a,
+.mobile-btn-row.row2 > a {
+  width: 49%;
+}
+
+.btn-mobile,
+.btn-undo-mobile,
+.btn-redo-mobile {
+  background-color: #c5c5c5;
+  border-color: #b1b1b1;
+  padding: 2px;
+  color: #666;
+  margin-top: 8px;
+  margin-bottom: 3px;
+  box-shadow: 1px 1px 1px 0 #888;
+  height: 3rem;
+}
+
+.wrapper {
+  box-sizing: border-box;
+}
+
+#desktop-canvas {
+  cursor: url('cursor-pencil.png'), cell;
+  box-shadow: 1px 1px 6px #888;
+}
+
+#mobile-canvas {
+  margin-top: 15px;
+  margin-left: 15px;
+  box-shadow: 1px 1px 1px 0 #888;
+}
+
+.btn-desktop {
+  box-shadow: 2px 2px 20px #666;
+  width: 4.5em;
+  margin-left: 3.5rem;
+  /* background-image: linear-gradient(45deg,#1da1f2,#196da0,#3b5998);
+  background-color: #3b5998; */
+  /* transition: 0.3s; */
+}
+
+/* .btn-desktop:hover {
+  background-image: linear-gradient(45deg,#3b5998,#1da1f2,#196da0);
+  background-color: #3b5998;
+} */
+
+.btn-primary {
+  background-image: linear-gradient(45deg,#2a842a,#7ef77e);
+  background-color: #5cb85c;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg,#5cb85c,#38ff38,#2a842a);
+  background-color: #4a9b4a;
+}
+
+.btn-print {
+  background-image: linear-gradient(45deg,#ffa919,#b7770c);
+  background-color: #e0a541;
+}
+
+.btn-print:hover {
+  background: linear-gradient(90deg,#b7770c,#ffa919,#c19241);
+  background-color: #e0a541;
+}
+
+.btn-danger {
+  background-image: linear-gradient(45deg,#751512,#f44c46);
+  background-color: #d9534f;
+}
+
+.btn-danger:hover {
+  background: linear-gradient(90deg,#963b39,#e83a35,#751512);
+  background-color: #bc4340;
+}
+
+.mobile-btn-row > .btn-download > button,
+.mobile-btn-row > .btn-clear > button,
+.mobile-btn-row > .btn-undo > button,
+.mobile-btn-row > .btn-redo > button {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  color: #333;
+}
+
+
+.btn-primary-mobile {
+  background-color: #88a184;  /* green */
+}
+
+.btn-danger-mobile {
+  background-color: #a67676; /* red */
+}
+
+.social {
+  display: flex;
+  margin-right: -2px;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.sidenav {
+  height: 100%;
+  position: fixed;
+  z-index: 1; /* Show social buttons */
+  top: 0.5em;
+}
+
+.leftnav {
+  width: 10rem;
+}
+
+.lower-buttons {
+  margin-top: 10px;
+  bottom: 10px;
+  display: flex;
+}
+
+.btn-desktop.btn-primary,
+.btn-desktop.btn-print,
+.btn-desktop.btn-danger {
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  padding: 0;
+  margin: 0;
+}
+
+.btn-desktop > i {
+  text-align: center;
+}
+
+.rightnav {
+  width: 10rem;
+  right: 0;
+  padding-top: 0.5rem;
+}
+
+.rightnav > div {
+  text-align: center;
+}
+
+.fb-like a {
+  text-decoration: none;
+}
+
+.leftnav a {
+  padding: 0.25rem 0.5rem;
+  text-decoration: none;
+  font-size: 120%;
+  display: block;
+  transition: 0.4s;
+}
+
+/**
+* Color of text buttons
+*/
+.leftnav a {
+   color: #666;
+ }
+.leftnav a:hover, .offcanvas a:focus {
+    color: #999;
+}
+
+.icon-holder a:hover {
+  color: #666;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding-left: 13.5rem;
+  padding-top: 0.5rem;
+}
+
+.social-links {
+  text-align: center;
+}
+
+.fb_iframe_widget {
+  display: block !important;
+  margin-bottom: 10px;
+}
+
+.content-box {
+  padding: 12px;
+  margin: 0em 0.5em 1em -2em;
+  background: #f1f1f1;
+  color: #888;
+}
+
+.fb-group {
+  padding-bottom: 1px;
+}
+
+.icon-holder-mobile {
+  position: inherit;
+  bottom: 10px;
+  transform: none;
+}
+
+.icon-holder a {
+  transition: 0.5s;
+  color: #222;
+  margin-left: 5px;
+  padding: 0.25rem;
+}
+
+.icon-holder-mobile a {
+  padding: 0 0.35rem;
+  color: #010101;
+}
+
+.line-width, .rotations-num, input[type=checkbox]{
+  background-color: #eee;
+}
+
+input {
+  text-align: center;
+  font-size: 12pt;
+}
+
+input[type=checkbox] {
+  width: 18px;
+  height: 18px;
+}
+
+input[type=image]{
+  box-shadow: 1px 1px 1px #888;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  input[type=image] {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+}
+
+.line-width, .selectionPalette, .rotations-num {
+  width: 2.75rem;
+  height: 1.75rem;
+  border: solid 1px #91765d;
+}
+
+.line-width:hover, .rotations-num:hover {
+  border-color: #F0C49B;
+}
+
+#btn-clear {
+  color: #a31a1a;
+}
+
+#btn-clear:hover {
+  color: #f21f1f;
+}
+
+#btn-color-desk, #btn-line-width, #btn-num-rot, #btn-flip-switch {
+  font-size: 100%;
+}
+
+.grid2x2 > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.grid2x2 > div > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.top-buttons {
+  margin-bottom: 1.75em;
+}
+
+.box {
+  text-align: center;
+  margin: 10px;
+  background-color: #ddd;
+  border-radius: 3px;
+  box-shadow: 1px 1px 8px #666;
+  background-image: linear-gradient(45deg,#ccc,#fff,#bbb);
+  transition: 0.2s ease-in-out;
+  height: 3em;
+}
+
+.btn-undo-desktop,
+.btn-redo-desktop {
+  transition: 0.1s ease-in-out;
+  outline: none;
+}
+
+.btn-undo-desktop > a,
+.btn-redo-desktop > a {
+  color: #2196F3;
+}
+
+.btn-undo-desktop:hover,
+.btn-undo-desktop:active,
+.btn-undo-desktop:focus,
+.btn-redo-desktop:hover,
+.btn-redo-desktop:active,
+.btn-redo-desktop:focus {
+  box-shadow: 1px 1px 5px #666;
+}
+
+@media print {
+  .sidenav, .leftnav, .top-links, .icon-holder {
+    display: none;
+  }
+
+  canvas {
+    padding: 0;
+    margin: auto;
+    display: block;
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.author > p {
+  color: gray;
+}
+
+.author > p > a {
+  color: #4864b4;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(30px);
+}
+
+.slider.round {
+  border-radius: 30px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.btn-mobile > label > i.fas {
+  vertical-align: -2px;
+}
+
+.btn-mobile > label > .fas.fa-circle.fa-md {
+  vertical-align: -3px;
+}
+
+.btn-mobile > label > .fas.fa-circle.fa-lg {
+  vertical-align: -5px;
+}
+
+.btn-mobile > label > .fas.fa-align-justify,
+.btn-mobile > label > .fas.fa-palette {
+  vertical-align: -4px;
+}
+
+.btn-mobile > label > .fas.fa-star-half-alt,
+.btn-mobile > label > .fas.fa-star {
+  vertical-align: -7px;
+}
+
+.fa-palette.fa-desktop-icon {
+  vertical-align: -23%;
+}
+
+.fa-circle.fa-desktop-icon.fa-md {
+  vertical-align: -8%;
+}
+
+.fa-circle.fa-desktop-icon.fa-lg {
+  vertical-align: -17%;
+}
+
+.fa-align-justify.fa-desktop-icon {
+  vertical-align: -20%;
+}
+
+.fa-star.fa-desktop-icon,
+.fa-star-half-alt.fa-desktop-icon {
+  vertical-align: -45%;
+}
