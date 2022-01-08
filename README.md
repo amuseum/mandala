@@ -1,5 +1,7 @@
 # It's a mandala maker!
 
+### Live App: https://www.metacoven.org/mandala/ 
+
 This is a kaleidoscope-inspired drawing tool. It was built in Vanilla JavaScript with a touch of jQuery for event handling. LocalStorage is used for saving user settings. Some external libraries and tools were included for file saving and color picking.
 
 The Amuseum version was forked from Hagar Shilo's mandala-app. Her excellent tutorials are included below.
